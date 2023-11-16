@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-function HomePage() {
+function AboutPage() {
   return (
     <div>
       {/* Header with Navigation Links */}
@@ -29,7 +29,7 @@ Contact              </Link>
 
       {/* Main Content */}
       <main>
-        <h1>Welcome to My Next.js Website</h1>
+        <h1>Welcome to My Next.js Website - About Page</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
           fringilla turpis ut risus venenatis, at bibendum libero finibus.
@@ -40,4 +40,4 @@ Contact              </Link>
   );
 }
 
-export default HomePage;
+export default AboutPage;
