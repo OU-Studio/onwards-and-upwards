@@ -1,0 +1,38 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafaff;
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        padding: 10px 40px;
+    }
+    .mainContent{
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      main{
+        width: 100%;
+        svg{
+            width: 100% !important;
+            height: auto !important;
+        }
+      }
+    }
+  }
+  
