@@ -75,6 +75,8 @@ const HomeText = (props: SVGProps<SVGSVGElement>) => (
 function HomePage() {
   return (
     <div className="mainContent">
+    <script type="module" defer src="jquery.js"></script>
+    <div id="cursor"></div>
       {/* Header with Navigation Links */}
       <header>
         <a href="/" className="logo">
@@ -86,8 +88,7 @@ function HomePage() {
       <main>
         <HomeText />
       </main>
-      <script type="module" async src="jquery.js"></script>
-      <script type="module" async src="mainScript.js"></script>
+      <script type="module" defer src="mainScript.js"></script>
     </div>
   );
 }
