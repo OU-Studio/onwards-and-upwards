@@ -1,8 +1,6 @@
 
 import * as React from "react"
 import { SVGProps } from "react"
-import Script from 'next/script'
-import $ from "jquery";
 
 
 
@@ -60,27 +58,27 @@ const HomeText = (props: SVGProps<SVGSVGElement>) => (
       }}
     />
     <path
-    id="fullstop"
+      id="fullstop"
       d="M1149.8 505c-3.5 0-6.4-1.2-8.8-3.6s-3.6-5.4-3.6-9c0-3.7 1.2-6.6 3.6-8.8 2.4-2.3 5.3-3.5 8.8-3.5s6.4 1.2 8.8 3.5c2.4 2.2 3.6 5.2 3.6 8.8 0 3.6-1.2 6.6-3.6 9s-5.3 3.6-8.8 3.6z"
       style={{
         fill: "#ff4c1f",
       }}
-    /> 
+    />
   </svg>
 )
 
 const Hmenu = (props: SVGProps<SVGSVGElement>) => (
-<svg className="ham hamRotate ham8" viewBox="0 0 100 100" width="80" >
-  <path
-        className="line top"
-        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-  <path
-        className="line middle"
-        d="m 30,50 h 40" />
-  <path
-        className="line bottom"
-        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-</svg>
+  <svg className="ham hamRotate ham8" viewBox="0 0 100 100" width="80" >
+    <path
+      className="line top"
+      d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+    <path
+      className="line middle"
+      d="m 30,50 h 40" />
+    <path
+      className="line bottom"
+      d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+  </svg>
 )
 
 
@@ -89,17 +87,22 @@ const Hmenu = (props: SVGProps<SVGSVGElement>) => (
 function HomePage() {
   return (
     <div className="mainContent">
-    <script type="module" defer src="jquery.js"></script>
-    <div id="cursor"></div>
+      <script type="module" defer src="jquery.js"></script>
+      <div id="cursor"></div>
       {/* Header with Navigation Links */}
       <header>
         <a href="/" className="logo">
-        <Logo />
+          <Logo />
         </a>
         <div className="hMenu">
-        <Hmenu />
+          <Hmenu />
         </div>
       </header>
+
+      <div className="menu">
+        <a href="/">HOME</a>
+        <a href="/about">ABOUT</a>
+      </div>
 
       {/* Main Content */}
       <main>

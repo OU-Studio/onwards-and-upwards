@@ -65,6 +65,42 @@ html {
     stroke-dashoffset: -64px;
 }
 
+.mainContent>.menu {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        font-size: 42px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.mainContent>* {
+    transition: opacity 0.5s ease;
+}
+
+.menuActive {
+    .mainContent>* {
+        opacity: 0
+    }
+
+    .mainContent>.menu {
+        opacity: 1;
+    }
+}
+
 
 body {
     background-color: #fafaff;
@@ -76,6 +112,9 @@ body {
         width: 100%;
         z-index: 2;
         padding: 10px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .mainContent {
