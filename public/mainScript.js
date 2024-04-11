@@ -21,4 +21,8 @@ $(window).on('load', function(){
         top: e.pageY
       });
   })
+
+  $('.ham').click(function () {
+    $(this).toggleClass('active')
+})
 })
