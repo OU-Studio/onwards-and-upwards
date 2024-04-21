@@ -14,11 +14,11 @@ function ProjectsPage() {
     })
   }, []);
   return (
-    <div className="mainContent">
+    <div className="mainContent projects">
 
       {/* Main Content */}
       <main>
-        <h1>projects page</h1>
+        <h1>Projects coming soon<span className="orange">...</span></h1>
       </main>
       
     </div>

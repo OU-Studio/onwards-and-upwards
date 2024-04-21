@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from "react"
-import {  useEffect } from 'react'
+import { useEffect } from 'react'
 
 
 
@@ -14,13 +14,48 @@ function AboutPage() {
     })
   }, []);
   return (
-    <div className="mainContent">
+    <div className="mainContent about">
 
       {/* Main Content */}
       <main>
-        <h1>about page</h1>
+        <div className="row rowOne">
+          <h3>Onwards and Upwards is a group of passionate creatives, dedicated to making inspiring, innovative and memorable websites.</h3>
+          <div className="imageWrapper">
+            <div className="image" style={{
+              backgroundImage: "url(" + "/images/stock.jpg" + ")",
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'
+            }} >
+            </div>
+          </div>
+        </div>
+        <div className="row rowTwo">
+          <div className="imageWrapper">
+            <div className="image" style={{
+              backgroundImage: "url(" + "/images/stock.jpg" + ")",
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'
+            }} >
+            </div>
+          </div>
+          <h3>With a team of specialists in everything from website design to user experience to marketing, we can offer unique insights into your online presence.</h3>
+        </div>
+        <div className="row rowThree">
+          <h3>Every project is treated the same and is given the care and attention it deserves. We want to support our clients so they can enjoy building their business.</h3>
+          <div className="imageWrapper">
+            <div className="image" style={{
+              backgroundImage: "url(" + "/images/stock.jpg" + ")",
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'
+            }} >
+            </div>
+          </div>
+        </div>
       </main>
-      
+
     </div>
   );
 }
@@ -31,5 +66,3 @@ function AboutPage() {
 
 
 export default AboutPage;
-
-

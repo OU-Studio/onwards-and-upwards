@@ -48,7 +48,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div className="mainContent">
+    <div className="mainContent home">
       
       <div id="cursor"></div>
 

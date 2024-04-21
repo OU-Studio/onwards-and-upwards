@@ -37,6 +37,17 @@ h3, p{
     font-style: normal;
 }
 
+h1, h2, h3, p{
+    .orange{
+        color: #ff5225;
+    }
+    a{
+        color: inherit;
+        text-decoration-color: #ff5225;
+        text-decoration-thickness: 3px;
+    }
+}
+
 h1{
     font-size: 5.61rem
 }
@@ -46,7 +57,8 @@ h2{
 }
 
 h3{
-    font-size: 3.157rem
+    font-size: 3.157rem;
+    line-height: 3.175rem;
 }
 
 p{
@@ -162,6 +174,9 @@ body>.menu {
         color: $brandBlack;
         text-decoration: none;
         letter-spacing: -0.04em;
+        &.active{
+            color: #ff5225
+        }
         @media all and (max-width: 1024px){
             font-size: 3rem;
         }
@@ -203,7 +218,7 @@ body {
         justify-content: space-between;
     }
 
-    .mainContent {
+    .mainContent.home {
         display: flex;
         align-items: center;
         height: 90vh;
@@ -211,7 +226,7 @@ body {
         position: fixed;
         top: 5vh;
         left: 5vw;
-
+        padding-top: 0px;
         main {
             width: 100%;
 
@@ -224,6 +239,10 @@ body {
                 }
             }
         }
+    }
+
+    .mainContent{
+padding-top: 140px;
     }
 
     #cursor {
@@ -270,10 +289,65 @@ html.loaded .homeText, html.loaded main {
 
 .mainContent.contact{
     main{
-        max-width: 1000px;
+        max-width: 1200px;
         margin: auto;
     }
     h2{
         text-align: center;
+    }
+}
+
+.projects{
+    main{
+        max-width: 1200px;
+        margin: auto;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+.about{
+    main{
+        max-width: 1200px;
+        margin: auto;
+        .row{
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            > h3{
+                width: 60%;
+            }
+            > div{
+                width: 40%;
+            }
+        }
+        .rowOne{
+            .imageWrapper{
+                position: relative;
+                .image{
+                    padding-bottom: 60%;
+                    position: relative;
+                }
+            }
+        }
+        .rowTwo{
+            .imageWrapper{
+                position: relative;
+                .image{
+                    padding-bottom: 60%;
+                    position: relative;
+                }
+            }
+        }
+        .rowThree{
+            .imageWrapper{
+                position: relative;
+                .image{
+                    padding-bottom: 60%;
+                    position: relative;
+                }
+            }
+        }
     }
 }
