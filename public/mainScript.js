@@ -25,5 +25,27 @@ $(window).on('load', function () {
   $('.ham').click(function () {
     $(this).toggleClass('active')
     $('body').toggleClass('menuActive')
+    $('html').removeClass('loaded')
   })
+
+  $('body > .menu a').click(function () {
+    if ($(this).hasClass('active')) {
+      $('.ham').removeClass('active')
+      $('body').removeClass('menuActive')
+      $('html').addClass('loaded')
+    } else {
+
+    }
+  })
+
+  $('html').addClass('loaded')
+  $('body > .menu a[href="' + location.pathname + '"]').addClass('active')
 })
+
+export default function test() {
+  $('.ham').removeClass('active')
+  $('body').removeClass('menuActive')
+  $('body > .menu a').removeClass('active')
+  $('html').addClass('loaded')
+  $('body > .menu a[href="' + location.pathname + '"]').addClass('active')
+}

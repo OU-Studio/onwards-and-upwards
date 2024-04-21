@@ -5,7 +5,7 @@ import {  useEffect } from 'react'
 
 
 
-function AboutPage() {
+function ProjectsPage() {
   useEffect(() => {
     console.log("USE EFFECT CALLED");
     import("../../public/mainScript.js").then(module => {
@@ -18,7 +18,7 @@ function AboutPage() {
 
       {/* Main Content */}
       <main>
-        <h1>about page</h1>
+        <h1>projects page</h1>
       </main>
       
     </div>
@@ -30,6 +30,6 @@ function AboutPage() {
 
 
 
-export default AboutPage;
+export default ProjectsPage;
 
 

@@ -1,12 +1,56 @@
+/*
+font-family: "montserrat", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "montserrat-alternates", sans-serif;
+font-weight: 400;
+font-style: normal;
+*/
+
+$brandBlack: #0A0A0A;
+
 body,
 html {
     margin: 0;
     padding: 0;
     position: relative;
+    font-size: 18px;
 }
 
 * {
     box-sizing: border-box;
+}
+
+h1, h2{
+    font-family: "montserrat-alternates", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: $brandBlack;
+        text-decoration: none;
+        letter-spacing: -0.04em;
+}
+
+h3, p{
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-size: 5.61rem
+}
+
+h2{
+    font-size: 4.209rem
+}
+
+h3{
+    font-size: 3.157rem
+}
+
+p{
+    font-size: 1rem;
 }
 
 //header menu
@@ -65,40 +109,50 @@ html {
     stroke-dashoffset: -64px;
 }
 
-.mainContent>.menu {
+body>.menu {
     pointer-events: none;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: all 0.5s ease;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 9999999;
+    z-index: 99;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: translateY(-100px);
 
     a {
-        font-size: 42px;
+        font-size: 100px;
         text-align: center;
-        font-weight: bold;
+        font-family: "montserrat-alternates", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: $brandBlack;
+        text-decoration: none;
+        letter-spacing: -0.04em;
     }
 }
 
 .mainContent>* {
-    transition: opacity 0.5s ease;
+    transition: all 0.5s ease 0.5s;
 }
 
 .menuActive {
-    .mainContent>* {
-        opacity: 0
+    .mainContent {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 0.5s ease 0s;
     }
 
-    .mainContent>.menu {
+    >.menu {
         opacity: 1;
         pointer-events: auto;
+        transition: all 0.5s ease 0.5s;
+        transform: translateY(0px);
     }
 }
 
@@ -106,12 +160,12 @@ html {
 body {
     background-color: #fafaff;
 
-    header {
+    .header {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 2;
+        z-index: 9999;
         padding: 10px 40px;
         display: flex;
         align-items: center;
@@ -168,5 +222,27 @@ body.pickup {
 
     #cursor {
         opacity: 1;
+    }
+}
+
+.homeText, main {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+html.loaded .homeText, html.loaded main {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.mainContent.contact{
+    main{
+        max-width: 1000px;
+        margin: auto;
+    }
+    h2{
+        text-align: center;
     }
 }
