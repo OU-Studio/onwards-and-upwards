@@ -8,7 +8,7 @@ import {  useEffect } from 'react'
 function ProjectsPage() {
   useEffect(() => {
     console.log("USE EFFECT CALLED");
-    import("../../public/mainScript.js").then(module => {
+    import("../../public/pageLoad.js").then(module => {
       const test = module.default;
       test();
     })

@@ -41,7 +41,7 @@ const HomeText = (props: SVGProps<SVGSVGElement>) => (
 function HomePage() {
   useEffect(() => {
     console.log("USE EFFECT CALLED");
-    import("../public/mainScript.js").then(module => {
+    import("../public/pageLoad.js").then(module => {
       const test = module.default;
       test();
     })
