@@ -23,9 +23,15 @@ $(window).on('load', function () {
     })
 
   $('.ham').click(function () {
-    $(this).toggleClass('active')
-    $('body').toggleClass('menuActive')
-    $('html').removeClass('loaded')
+    if($('body').hasClass('menuActive')){
+      $(this).removeClass('active')
+      $('body').removeClass('menuActive')
+      $('html').addClass('loaded')
+    }else{
+      $(this).addClass('active')
+      $('body').addClass('menuActive')
+      $('html').removeClass('loaded')
+    }
   })
 
   $('body > .menu a').click(function () {
