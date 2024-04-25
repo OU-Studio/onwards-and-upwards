@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link.js";
 import * as React from "react"
 import { useEffect } from 'react'
 
@@ -113,6 +114,12 @@ function ProjectsPage() {
             <h3>Wright Boxes</h3>
           </a>
 
+        </div>
+        <h2>Ready to get the site your business deserves<span className="orange">?</span></h2>
+        <div className="buttonRow">
+          <div className="button">
+            <Link href="/contact">Get in touch</Link>
+          </div>
         </div>
       </main>
 

@@ -56,8 +56,13 @@ function AboutPage() {
           </div>
         </div>
         <h2>Let’s make your website stand out<span className="orange">!</span></h2>
-        <div className="button">
-          <Link href="/contact">Get in touch</Link>
+        <div className="buttonRow">
+          <div className="button">
+            <Link href="/contact">Get in touch</Link>
+          </div>
+          <div className="button">
+            <Link href="/projects">See our work</Link>
+          </div>
         </div>
       </main>
 
