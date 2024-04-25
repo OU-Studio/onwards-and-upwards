@@ -1,11 +1,10 @@
-
-
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './global.scss'
 import './global.css'
 import { SVGProps } from "react"
 import Link from 'next/link'
+import { headers } from 'next/headers';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -71,8 +70,12 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
+}, ) {
+  const headersList = headers();
+    const domain = headersList.get('host') || "";
+    const fullUrl = headersList.get('referer') || "";
   return (
+    <>
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/ggc0lyq.css" />
@@ -100,7 +103,11 @@ export default function RootLayout({
           <Link href="/contact">Get in touch</Link>
         </div>
         {children}
+      <div className="footer">
+        <p>Copyright Onwards + Upwards 2024</p>
+      </div>
       </body>
     </html>
+  </>
   )
 }

@@ -48,6 +48,8 @@ $(window).on('load', function () {
     }
   })
 
+ 
+
   $('html').addClass('loaded')
   $('body > .menu a[href="' + location.pathname + '"]').addClass('active')
 })

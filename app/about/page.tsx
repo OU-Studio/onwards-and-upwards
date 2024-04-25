@@ -23,7 +23,7 @@ function AboutPage() {
           <h3>Onwards and Upwards is a group of passionate creatives, dedicated to making inspiring, innovative and memorable websites.</h3>
           <div className="imageWrapper">
             <div className="image" style={{
-              backgroundImage: "url(" + "/images/stock.jpg" + ")",
+              backgroundImage: "url(" + "/images/c8.jpg" + ")",
               backgroundPosition: 'center',
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat'
@@ -34,7 +34,7 @@ function AboutPage() {
         <div className="row rowTwo">
           <div className="imageWrapper">
             <div className="image" style={{
-              backgroundImage: "url(" + "/images/stock.jpg" + ")",
+              backgroundImage: "url(" + "/images/mmw.jpg" + ")",
               backgroundPosition: 'center',
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat'
@@ -47,7 +47,7 @@ function AboutPage() {
           <h3>Every project is treated the same and is given the care and attention it deserves. We want to support our clients so they can enjoy building their business.</h3>
           <div className="imageWrapper">
             <div className="image" style={{
-              backgroundImage: "url(" + "/images/stock.jpg" + ")",
+              backgroundImage: "url(" + "/images/studioore.jpg" + ")",
               backgroundPosition: 'center',
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat'
