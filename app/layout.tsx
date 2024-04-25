@@ -3,6 +3,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './global.scss'
+import './global.css'
 import { SVGProps } from "react"
 import Link from 'next/link'
 

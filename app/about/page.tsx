@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link.js";
 import * as React from "react"
 import { useEffect } from 'react'
 
@@ -53,6 +54,10 @@ function AboutPage() {
             }} >
             </div>
           </div>
+        </div>
+        <h2>Let’s make your website stand out<span className="orange">!</span></h2>
+        <div className="button">
+          <Link href="/contact">Get in touch</Link>
         </div>
       </main>
 

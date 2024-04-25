@@ -1,11 +1,15 @@
 window.jQuery = window.$ = jQuery;
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 $(window).on('load', function () {
   console.log('sprouts')
 
   $('#fullstop').hover(
     function () {
-      $('body').addClass('pickup')
+      //$('body').addClass('pickup')
     },
     function () {
 
