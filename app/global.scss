@@ -329,6 +329,16 @@ main,
     transition: all 0.5s ease 0s;
 }
 
+.buttonRow{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 20px;
+    .button{
+        margin: 0px;
+    }
+}
+
 .button {
     margin: auto;
     background-color: #ff5225;
@@ -469,6 +479,12 @@ html.loaded .footer {
     }
 }
 
+#page_contact{
+    .footer{
+        display: none;
+    }
+}
+
 .home {
     main {
         padding-top: 0px;
@@ -485,12 +501,14 @@ html.loaded .footer {
             margin-top: 0px;
             margin-bottom: 100px;
         }
-
+        h2{
+            text-align: center;
+        }
         .projectsGrid {
             display: flex;
             flex-wrap: wrap;
             gap: 60px 30px;
-
+margin-bottom: 50px;
             .project {
                 width: calc(50% - 15px);
                 color: #0A0A0A;
