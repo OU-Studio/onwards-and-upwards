@@ -1,27 +1,29 @@
+
 'use client'
 
 import * as React from "react"
 import {  useEffect } from 'react'
+import HeroSection13 from "../components/heroFive";
+import ContactSection15 from "../components/contactForm";
+import DesktopNav from '../components/desktopNav';
 
 
 
-function ContactPage() {
-  useEffect(() => {
-    console.log("USE EFFECT CALLED");
-    import("../../public/pageLoad.js").then(module => {
-      const test = module.default;
-      test();
-    })
-  }, []);
+
+
+
+function Contact() {
+
   return (
-    <div className="mainContent contact">
+    <div className="mainContent home">
+      
+      <div id="cursor"></div> 
 
       {/* Main Content */}
       <main>
-        <h2>We make getting in touch with us super simple.</h2>
-        <h2>Email us at <a href="mailto:info@ou.studio" target="_blank">info@ou.studio</a></h2>
-        <h2>Call or Text us on <a href="tel:+447404367639" target="_blank">07404 367639</a></h2>
-        <h2>Start a WhatsApp chat <a href="https://wa.me/message/XGX5CTAIJOLML1" target="_blank">now</a></h2>
+      <DesktopNav></DesktopNav>
+        <HeroSection13></HeroSection13>
+        <ContactSection15></ContactSection15>
       </main>
       
     </div>
@@ -33,6 +35,6 @@ function ContactPage() {
 
 
 
-export default ContactPage;
+export default Contact;
 
 

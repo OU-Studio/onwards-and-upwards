@@ -72,7 +72,7 @@ function PricingCard({ title, price, options }: PricingCardPropsType) {
           color="gray"
           className="flex items-center justify-center gap-4"
         >
-          {title === "premium" ? "try premium" : "join"}{" "}
+          {title === "MORE INFO" ? "MORE INFO" : "MORE INFO"}{" "}
           <ArrowRightIcon className="h-5 w-5" strokeWidth={2} />
         </Button>
       </CardBody>
@@ -83,34 +83,34 @@ function PricingCard({ title, price, options }: PricingCardPropsType) {
 export function PricingSection7() {
   const cards = [
     {
-      title: "starter",
-      price: ["$", "199", "mo"],
+      title: "ad hoc",
+      price: ["", "£60", "hour"],
       options: [
-        "Complete Documentation",
-        "Working materials in Sketch",
-        "500MB cloud storage",
-        "Life support",
+        "Website Design",
+        "Website Development",
+        "UX/UI Analysis",
+        "Mobile Scaling",
       ],
     },
     {
-      title: "pro",
-      price: ["$", "299", "mo"],
+      title: "projects",
+      price: ["", "£900+", ""],
       options: [
-        "Complete documentation",
-        "Working materials in Sketch",
-        "100GB cloud storage",
-        "500 team members",
-        "Premium support",
+        "Brand New Website",
+        "Website Refresh",
+        "E-commerce",
+        "Custom Website Functionality",
+        "Branding / Logo Design",
       ],
     },
     {
-      title: "premium",
-      price: ["$", "399", "mo"],
+      title: "maintenance",
+      price: ["", "£50", "hour"],
       options: [
-        "Complete documentation",
-        "Working materials in Sketch",
-        "2GB cloud storage",
-        "Premium support",
+        "Content Upload",
+        "Scheduled Website Audits",
+        "Priority Support",
+        "Minimum 4 hours per month",
       ],
     },
   ];
@@ -123,12 +123,6 @@ export function PricingSection7() {
       >
         <div className="absolute h-full w-full bg-black/80">
           <div className="container mx-auto py-16 text-center">
-            <Button
-              size="md"
-              className="mb-4 bg-white font-medium !text-blue-gray-900"
-            >
-              Premium
-            </Button>
             <Typography variant="h2" color="white" className="mb-4">
               See Our Pricing
             </Typography>
@@ -137,8 +131,7 @@ export function PricingSection7() {
               color="white"
               className="mb-8 opacity-70"
             >
-              You have Free Unlimited Updates and Premium Support on each
-              package
+              Everything comes with premium support and no hidden costs
             </Typography>
           </div>
         </div>

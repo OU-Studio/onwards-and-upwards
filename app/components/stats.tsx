@@ -31,19 +31,19 @@ function StatsCard({ count, title, desc }: StatsCardPropsType) {
 }
 const stats = [
   {
-    count: "1,200+",
-    title: "Projects",
-    desc: "Of “high-performing” level are led by a certified manager",
+    count: "950+",
+    title: "Projects completed",
+    desc: "Hundreds of happy clients and successful projects completed.",
   },
   {
-    count: "500+",
-    title: "Sections",
-    desc: "That meets quality standards required by our users",
+    count: "8+",
+    title: "Years of experience",
+    desc: "We have a vast amount of knowledge to deliver the best work possible.",
   },
   {
-    count: "24/7",
-    title: "Support",
-    desc: "Actively engage team members that finishes on time",
+    count: "3",
+    title: "Major awards won",
+    desc: "Our websites get recognised for their design and functionality.",
   },
 ];
 

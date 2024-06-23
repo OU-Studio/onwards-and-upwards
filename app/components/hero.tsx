@@ -1,44 +1,68 @@
-'use client';
-
 import React from "react";
-import { useRouter } from 'next/navigation';
 import {
+  Navbar,
+  Collapse,
   Button,
   Checkbox,
+  IconButton,
   Typography,
   Input,
 } from "@material-tailwind/react";
+import {
+  RectangleStackIcon,
+  UserCircleIcon,
+  CommandLineIcon,
+  Squares2X2Icon,
+} from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
+interface NavItemPropsType {
+  children: React.ReactNode;
+}
 
-
+function NavItem({ children }: NavItemPropsType) {
+  return (
+    <li>
+      <Typography
+        as="a"
+        href="#"
+        variant="paragraph"
+        color="blue-gray"
+        className="text-blue-gray-700 flex items-center gap-2 font-medium"
+      >
+        {children}
+      </Typography>
+    </li>
+  );
+}
 
 function HeroSection10() {
-  const router = useRouter();
-
-  const heroClick = () => {
-    // Navigate to the desired page
-    router.push('/about');
-  };
 
   return (
     <>
       <header className="bg-white p-8">
         <div className="w-w-full container mx-auto pt-12 pb-6 text-center lg:pb-20">
           <Typography
-                      variant="h1"
-                      color="blue-gray"
-                      className="!lg:leading-tight mx-auto mb-6 w-full text-3xl !leading-snug lg:max-w-3xl lg:text-5xl" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
+            variant="h1"
+            color="blue-gray"
+            className="!lg:leading-tight mx-auto mb-6 w-full text-3xl !leading-snug lg:max-w-3xl lg:text-5xl"
+          >
             A creative studio with innovative solutions to tackle the modern web
           </Typography>
           <Typography
-                      variant="lead"
-                      className="mx-auto w-full !text-gray-500 lg:w-10/12 lg:px-12 xl:w-9/12 xl:px-20" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
+            variant="lead"
+            className="mx-auto w-full !text-gray-500 lg:w-10/12 lg:px-12 xl:w-9/12 xl:px-20"
+          >
             Get started with a forward thinking website today!
           </Typography>
           <div className="mt-8 mb-2 flex items-start w-full flex-col gap-4 md:flex-row md:justify-center">
+            <div className="grid lg:w-96 md:w-80 w-full">
+              <Input color="gray" label="Enter your email" size="lg" crossOrigin={undefined} />
+            </div>
             <Button
-                          color="gray"
-                          className="w-full py-[14px] md:w-[10rem]"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} onClick={heroClick}            >
+              color="gray"
+              className="w-full py-[14px] md:w-[10rem]"
+            >
               get started
             </Button>
           </div>

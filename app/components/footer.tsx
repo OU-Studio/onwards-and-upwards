@@ -1,7 +1,7 @@
 'use client'
 
 import { Typography, IconButton } from "@material-tailwind/react";
-const links = ["Home", "About Us", "Press", "Blog", "Service"];
+const links = ["Home", "About", "Services", "Portfolio", "Contact"];
 const currentYear = new Date().getFullYear();
 
 export function Footer8() {
@@ -10,7 +10,7 @@ export function Footer8() {
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-between gap-y-4 md:flex-row">
           <div className="flex flex-col gap-4">
-            <Typography variant="h6">MATERIAL TAILWIND</Typography>
+            <Typography variant="h6">ONWARDS & UPWARDS</Typography>
             <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
               {links.map((link, index) => (
                 <ul key={index} className="">
@@ -30,8 +30,7 @@ export function Footer8() {
           </div>
           <div className="flex flex-col md:items-end">
             <Typography className="mb-4 text-lg !font-semibold text-left md:!text-right max-w-sm">
-              The reward for getting on the stage is fame. The price of fame is
-              you can&apos;t get off the stage.
+            You deserve a website that inspires, converts and works for you.
             </Typography>
             <div className="flex gap-2">
               <a href="#buttons-with-link">
@@ -61,7 +60,7 @@ export function Footer8() {
           color="blue-gray"
           className="text-left !text-sm font-medium text-gray-500 lg:mt-0 mt-4"
         >
-          All rights reserved. &copy; {currentYear} Material Tailwind
+          All rights reserved. &copy; {currentYear} ONWARDS & UPWARDS
         </Typography>
       </div>
     </footer>
