@@ -30,8 +30,7 @@ function NavItem({ children }: NavItemPropsType) {
         href="#"
         variant="paragraph"
         color="blue-gray"
-        className="text-blue-gray-700 flex items-center gap-2 font-medium"
-      >
+        className="text-blue-gray-700 flex items-center gap-2 font-medium"  >
         {children}
       </Typography>
     </li>
@@ -51,7 +50,7 @@ function HeroSection10() {
 
   return (
     <>
-      <Navbar shadow={false} fullWidth className="border-0">
+      <Navbar shadow={false} fullWidth className="border-0" placeholder="" >
         <div className="container mx-auto flex items-center justify-between">
           <Typography color="blue-gray" className="text-lg font-bold">
             Material Tailwind

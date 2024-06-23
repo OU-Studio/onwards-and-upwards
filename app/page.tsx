@@ -1,11 +1,13 @@
+'use client'
 
 import * as React from "react"
 import HeroSection10 from "./components/Hero";
 
+
 const MyPage = () => {
   return (
     <div>
-      <HeroSection10 />
+      <HeroSection10></HeroSection10>
     </div>
   );
 };
