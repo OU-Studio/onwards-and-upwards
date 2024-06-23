@@ -13,7 +13,7 @@ export function TestimonialSection14() {
                 Work with me
               </Typography>
               <Typography className="mb-3 font-normal !text-gray-500 max-w-sm">
-                "Quote from me about us and what we do"
+                Quote from me about us and what we do
               </Typography>
               <Typography variant="h6" color="blue-gray" className="mb-0.5">
                 Joe Cory
