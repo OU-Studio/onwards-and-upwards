@@ -57,7 +57,7 @@ export function HeroSection1() {
               variant="lead"
               className="mb-12 !text-gray-500 md:pr-16 xl:pr-28"
             >
-              My team is made up of dedicated professionals from amazing partner companies that allow us to give you every service you need.
+              My team is made up of dedicated professionals from amazing partner companies that allow me to give you every service you need.
             </Typography>
             <div className="grid">
               <div className="mb-2 flex items-start w-full flex-col md:w-9/12 gap-4 md:flex-row">

@@ -1,19 +1,16 @@
-'use client'
+'use client';
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Navbar,
   Collapse,
-  Button,
-  IconButton,
   Typography,
+  IconButton,
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
 } from "@material-tailwind/react";
-import {
-  RectangleStackIcon,
-  UserCircleIcon,
-  CommandLineIcon,
-  Squares2X2Icon,
-} from "@heroicons/react/24/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 interface NavItemPropsType {
@@ -38,40 +35,123 @@ function NavItem({ children, href }: NavItemPropsType) {
 }
 
 function DesktopNav() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+
   const handleOpen = () => setOpen((cur) => !cur);
 
-  React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpen(false),
-    );
+  useEffect(() => {
+    window.addEventListener("resize", () => window.innerWidth >= 960 && setOpen(false));
   }, []);
 
   return (
-    <>
-      <Navbar shadow={false} fullWidth className="border-0">
-        <div className="container mx-auto flex items-center justify-between">
+    <Navbar shadow={false} fullWidth className="border-0">
+      <div className="container mx-auto flex items-center justify-between">
         <NavItem href="/">Onwards & Upwards</NavItem>
-          <ul className="ml-10 hidden items-center gap-6 lg:flex">
+        <ul className="hidden items-center gap-6 lg:flex">
           <NavItem href="/about">About</NavItem>
-          <NavItem href="/website-design">Services</NavItem>
-          <NavItem href="/project/chair8media">Portfolio</NavItem>
-          <NavItem href="/contact">Contact</NavItem>
-          </ul>
-        </div>
-        <Collapse open={open}>
-          <div className="container mx-auto mt-3 border-t border-blue-gray-50 px-2 pt-4">
-            <ul className="flex flex-col gap-4">
-            <NavItem href="/about">About</NavItem>
-          <NavItem href="/services">Services</NavItem>
+          <li className="relative group">
+            <Typography
+              as="a"
+              href="#"
+              variant="paragraph"
+              color="blue-gray"
+              className="text-blue-gray-700 flex items-center gap-2 font-medium"
+            >
+              Services
+            </Typography>
+            <ul className="absolute left-0 pt-2 hidden w-48 bg-white shadow-lg group-hover:block">
+              <MenuItem>
+                <NavItem href="/website-design">Website Design</NavItem>
+              </MenuItem>
+              <MenuItem>
+                <NavItem href="/website-development">Website Development</NavItem>
+              </MenuItem>
+              <MenuItem>
+                <NavItem href="/seo">SEO</NavItem>
+              </MenuItem>
+              <MenuItem>
+                <NavItem href="/digital-marketing">Digital Marketing</NavItem>
+              </MenuItem>
+              <MenuItem>
+                <NavItem href="/ux-ui-analysis">UX/UI Analysis</NavItem>
+              </MenuItem>
+              <MenuItem>
+                <NavItem href="/mobile-scaling">Mobile Scaling</NavItem>
+              </MenuItem>
+              <MenuItem>
+                <NavItem href="/e-commerce">E-Commerce</NavItem>
+              </MenuItem>
+              <MenuItem>
+                <NavItem href="/branding-logo-design">Branding / Logo Design</NavItem>
+              </MenuItem>
+              <MenuItem>
+                <NavItem href="/website-maintenance">Website Maintenance</NavItem>
+              </MenuItem>
+            </ul>
+          </li>
+
           <NavItem href="/portfolio">Portfolio</NavItem>
           <NavItem href="/contact">Contact</NavItem>
-            </ul>
-          </div>
-        </Collapse>
-      </Navbar>
-    </>
+        </ul>
+        <IconButton
+          variant="text"
+          className="ml-auto lg:hidden"
+          onClick={handleOpen}
+        >
+          {open ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
+        </IconButton>
+      </div>
+      <Collapse open={open}>
+        <div className="container mx-auto mt-3 border-t border-blue-gray-50 px-2 pt-4">
+          <ul className="flex flex-col gap-4">
+            <NavItem href="/about">About</NavItem>
+            <li className="relative group">
+              <Typography
+                as="a"
+                href="#"
+                variant="paragraph"
+                color="blue-gray"
+                className="text-blue-gray-700 flex items-center gap-2 font-medium"
+              >
+                Services
+              </Typography>
+              <ul className="absolute left-0 pt-2 hidden w-48 bg-white shadow-lg group-hover:block">
+                <MenuItem>
+                  <NavItem href="/website-design">Website Design</NavItem>
+                </MenuItem>
+                <MenuItem>
+                  <NavItem href="/web-development">Website Development</NavItem>
+                </MenuItem>
+                <MenuItem>
+                  <NavItem href="/seo">SEO</NavItem>
+                </MenuItem>
+                <MenuItem>
+                  <NavItem href="/digital-marketing">Digital Marketing</NavItem>
+                </MenuItem>
+                <MenuItem>
+                  <NavItem href="/ux-ui-analysis">UX/UI Analysis</NavItem>
+                </MenuItem>
+                <MenuItem>
+                  <NavItem href="/mobile-scaling">Mobile Scaling</NavItem>
+                </MenuItem>
+                <MenuItem>
+                  <NavItem href="/e-commerce">E-Commerce</NavItem>
+                </MenuItem>
+                <MenuItem>
+                  <NavItem href="/branding-logo-design">Branding / Logo Design</NavItem>
+                </MenuItem>
+                <MenuItem>
+                  <NavItem href="/website-maintenance">Website Maintenance</NavItem>
+                </MenuItem>
+              </ul>
+            </li>
+
+            <NavItem href="/portfolio">Portfolio</NavItem>
+            <NavItem href="/contact">Contact</NavItem>
+          </ul>
+        </div>
+      </Collapse>
+    </Navbar>
   );
 }
 

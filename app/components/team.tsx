@@ -63,16 +63,16 @@ import {
   
   const members = [
     {
-      img: "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/studio-5.jpg",
-      name: "Ryan Samuel",
-      title: "financial examiner",
-      desc: "Today you are you! That is truer than true! There is no one alive who is you-er than you!",
+      img: "",
+      name: "Manage My Website",
+      title: "SEO Partner",
+      desc: "When it comes to search engine optimization (or SEO), they really know their stuff. Their specialist Squarespace SEO service will ensure that my website can be picked up and read easily by the search engines. While they can't guarantee a specific position in the rankings, I can be confident that my site will be recognized.",
     },
     {
-      img: "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/studio-3.jpg",
-      name: "Jordan Michael",
-      title: "ui designer",
-      desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
+      img: "",
+      name: "Electric Design Studio",
+      title: "Design Partner",
+      desc: "",
     },
   ];
   

@@ -2,7 +2,7 @@
 'use client'
 
 import * as React from "react"
-import {  useEffect } from 'react'
+import { useEffect } from 'react'
 import HeroSection16 from "../components/heroTwo";
 import FeatureSection16 from "../components/featuresOne";
 import PricingSection7 from "../components/pricing";
@@ -18,18 +18,18 @@ function HomePage() {
 
   return (
     <div className="mainContent home">
-      
-      <div id="cursor"></div> 
+
+      <div id="cursor"></div>
 
       {/* Main Content */}
       <main>
-      <DesktopNav></DesktopNav>
+        <DesktopNav></DesktopNav>
         <HeroSection16></HeroSection16>
         <FeatureSection16></FeatureSection16>
         <PricingSection7></PricingSection7>
         <TestimonialSection15></TestimonialSection15>
       </main>
-      
+
     </div>
   );
 }
