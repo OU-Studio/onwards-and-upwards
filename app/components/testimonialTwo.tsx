@@ -13,7 +13,7 @@ export function TestimonialSection14() {
                 Work with me
               </Typography>
               <Typography className="mb-3 font-normal !text-gray-500 max-w-sm">
-              I&apos;m a passionate designer and developer who loves solving problems and bringing my clients' ideas to life. With a keen eye for detail and a commitment to doing my best, I aim to deliver top-notch results in every project. I focus on your needs and goals, making sure you're at the center of everything I do. I'm dedicated to being helpful and caring, ensuring the process from start to finish is smooth and enjoyable. Let's team up and create something amazing together!
+              I&apos;m a passionate designer and developer who loves solving problems and bringing my clients&apos; ideas to life. With a keen eye for detail and a commitment to doing my best, I aim to deliver top-notch results in every project. I focus on your needs and goals, making sure you&apos;re at the center of everything I do. I&apos;m dedicated to being helpful and caring, ensuring the process from start to finish is smooth and enjoyable. Let&apos;s team up and create something amazing together!
               </Typography>
               <Typography variant="h6" color="blue-gray" className="mb-0.5">
                 Joe Cory
