@@ -66,7 +66,7 @@ function HeroSection16() {
               variant="lead"
               className="mx-auto w-full !text-gray-500 lg:text-lg text-base"
             >
-              Why settle for an 'okay' looking website when you can have a great one.
+              Why settle for an {"\""}okay{"\""} looking website when you can have a great one.
             </Typography>
             <div className="mt-8 grid w-full place-items-start md:justify-center">
               <div className="mb-2 flex w-full flex-col gap-4 md:flex-row">
