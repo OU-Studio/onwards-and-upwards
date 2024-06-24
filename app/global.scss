@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5, h6, .font-sans{
+    font-family: montserrat-alternates, sans-serif !important;
+font-weight: 600 !important;
+font-style: normal;
+letter-spacing: 0em !important;
+}
+
+body, p, p.font-sans{
+    font-family: prompt !important;
+    font-weight: initial !important;
+    letter-spacing: 0em !important;
+}
+
+.bg-brandOrange{
+    background-color: #FF4C1F;
+}
+
+.bg-brandLightBlue{
+    background-color: #00BCDA;
+}
+
+.bg-brandPurple{
+    background-color: #81368B;
+}
+
+.text-brandLightBlue{
+    color: #00BCDA !important;
+}
+
+.text-brandPurple{
+    color: #81368B !important;
+}
+
+
+.bg-brandOrangeTransparent{
+    background-color: rgba(255, 76, 31, 0.8);
+}
+
+.navLogo{
+    list-style-type: none;
+}
+
+.carouselNoArrow{
+    button{
+        display: none !important;
+    }
+}

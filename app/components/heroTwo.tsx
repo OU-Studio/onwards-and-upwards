@@ -53,11 +53,11 @@ function HeroSection16() {
               className="mx-auto my-6 w-full leading-snug  !text-2xl lg:max-w-3xl lg:!text-5xl"
             >
               Elevate you online presence with a{" "}
-              <span className="text-green-500 leading-snug ">
+              <span className="text-brandLightBlue leading-snug ">
                 new
               </span>{" "}
               and{" "}
-              <span className="leading-snug text-green-500">
+              <span className="leading-snug text-brandPurple">
                 unique
               </span>
               {" "}website design.
@@ -72,8 +72,7 @@ function HeroSection16() {
               <div className="mb-2 flex w-full flex-col gap-4 md:flex-row">
                 <Input color="gray" label="Enter your email" size="lg" placeholder="" crossOrigin={undefined} />
                 <Button
-                  color="gray"
-                  className="w-full px-4 md:w-[12rem]"
+                  className="w-full px-4 md:w-[12rem] bg-brandOrange"
                 >
                   get started
                 </Button>

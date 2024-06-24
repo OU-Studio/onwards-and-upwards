@@ -1,11 +1,11 @@
 'use client'
 
 import React from "react";
-import { Card, CardBody, Typography, Avatar } from "@material-tailwind/react";
+import { Card, CardBody, Typography, Avatar, Button } from "@material-tailwind/react";
 
 export function FeatureSection16() {
   return (
-    <section className="lg:py-28 py-10 px-8">
+    <section className=" mb-8 px-8 pt-32">
       <div className="mb-8 container mx-auto grid lg:gap-x-8 gap-y-8 grid-cols-1 lg:grid-cols-3">
         <Card
           className="col-span-1 bg-gray-100/50 overflow-hidden rounded-lg"
@@ -23,7 +23,7 @@ export function FeatureSection16() {
               Our website designs focus on a great user experience. We ensure our designs are visually appealing and easy to navigate, keeping visitors engaged and helping them find what they need.
             </Typography>
             <img
-              src="/images/c8.jpg"
+              src="/images/uxui.jpeg"
               alt="iphone"
               className="w-full xl:h-[370px] lg:h-[360px] object-cover object-center rounded-lg mt-4"
             />
@@ -45,7 +45,7 @@ export function FeatureSection16() {
               With the vast array of devices today, from smartphones to large desktop monitors, we prioritize a responsive design to ensure that your website performs seamlessly across all screen sizes. This approach maintains consistency, enhances user engagement, and preserves functionality and aesthetics on every platform for every user.
             </Typography>
             <img
-              src="/images/c8.jpg"
+              src="/images/responsivedesign.jpeg"
               alt="laptop"
               className="w-full xl:h-[370px] lg:h-[360px] object-cover object-center rounded-lg mt-4"
             />
@@ -69,47 +69,42 @@ export function FeatureSection16() {
               Our Custom Design Solutions are tailored to reflect your unique brand identity and meet your specific business needs. We take the time to understand your vision and objectives, ensuring that every element of the design is crafted to enhance your online presence. By focusing on bespoke visuals and practical features, we deliver a distinct and compelling website that stands out in your industry.
             </Typography>
             <img
-              src="/images/c8.jpg"
+              src="/images/websitedesign.jpeg"
               alt="laptop"
               className="w-full xl:h-[370px] lg:h-[360px] object-cover object-center rounded-lg mt-4"
             />
           </CardBody>
         </Card>
-        <Card className="col-span-1 bg-gray-100/50 rounded-lg" shadow={false}>
+        <Card className="col-span-1 bg-brandLightBlue rounded-lg flex flex-col content-center justify-center" shadow={false}>
           <CardBody className="text-center">
             <Typography
-              variant="h4"
-              color="blue-gray"
+              variant="h3"
+              color="black"
               className="mb-2 font-medium"
             >
-              Want to get started?
+              How much will it cost?
             </Typography>
-            <Typography className="text-center max-w-xs mx-auto text-base font-normal leading-7 !text-gray-500">
-              Take the first step to a new website design.
+            <Typography className="text-center max-w-xs mx-auto text-base font-normal leading-7 !text-black">
+              Spoiler alert! It&apos;s less than you might think.
             </Typography>
-            <div className="flex justify-between items-end mt-[144px]">
-              <div className="flex gap-2">
-                <img
-                  src="https://www.material-tailwind.com/image/mt-logo.svg"
-                  alt="logo"
-                />
-                <Typography
-                  as="a"
-                  href="#"
-                  color="blue-gray"
-                  className="mr-4 text-xs font-bold cursor-pointer"
-                >
-                  Material <br /> Tailwind
-                </Typography>
-              </div>
+
+            <div className="relative bg-clip-border text-gray-700 col-span-2  overflow-hidden rounded-lg mt-8">
               <Typography
-                as="a"
-                href="#"
-                color="blue-gray"
-                className="text-xs font-bold cursor-pointer"
+                variant="h4"
+                color="black"
+                className="mb-2 font-medium"
               >
-                material-tailwind.com
+                Projects starting from £800
               </Typography>
+              <Typography className="text-center max-w-xs mx-auto text-base font-normal leading-7 !text-black">
+                If your interested in getting fresh website design, get in contact using the button below.
+              </Typography>
+              <Button
+                color="black"
+                className="w-s px-4 md:w-[12rem] text-center mt-8"
+              >
+                get started
+              </Button>
             </div>
           </CardBody>
         </Card>

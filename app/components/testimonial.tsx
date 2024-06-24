@@ -4,8 +4,8 @@ import { Carousel, Typography } from "@material-tailwind/react";
 
 export function TestimonialSection15() {
   return (
-    <section className="px-8 py-10 lg:py-28">
-      <div className="container mx-auto !rounded-xl !bg-[url('https://www.material-tailwind.com/img/Background.png')] bg-center px-8 py-10 lg:px-16">
+    <section className="px-8 pb-10">
+      <div className="container mx-auto !rounded-xl !bg-[url('/images/sunrise.jpeg')] bg-opacity-80 bg-center bg-cover px-8 py-10 lg:px-16 bg-black carouselNoArrow">
         <Carousel
           transition={{ duration: 1 }}
           navigation={({ setActiveIndex, activeIndex, length }) => (

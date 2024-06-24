@@ -46,8 +46,16 @@ function DesktopNav() {
   return (
     <Navbar shadow={false} fullWidth className="border-0">
       <div className="container mx-auto flex items-center justify-between">
-        <NavItem href="/">Onwards & Upwards</NavItem>
-        <ul className="hidden items-center gap-6 lg:flex">
+        <div className="navLogo">
+          <NavItem href="/" >
+            <img
+              src="/images/OU-Logo-Blue-Purple.png"
+              alt="logo"
+              className="w-[124.4px] object-contain h-[60px]"
+            />
+          </NavItem>
+        </div>
+        <ul className="hidden items-center gap-6 lg:flex rounded-md">
           <NavItem href="/about">About</NavItem>
           <li className="relative group">
             <Typography
@@ -59,7 +67,7 @@ function DesktopNav() {
             >
               Services
             </Typography>
-            <ul className="absolute left-0 pt-2 hidden w-48 bg-white shadow-lg group-hover:block">
+            <ul className="absolute left-0 pt-2 hidden w-56 bg-white shadow-lg group-hover:block rounded-md">
               <MenuItem>
                 <NavItem href="/website-design">Website Design</NavItem>
               </MenuItem>

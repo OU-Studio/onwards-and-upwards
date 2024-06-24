@@ -10,7 +10,11 @@ export function Footer8() {
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-between gap-y-4 md:flex-row">
           <div className="flex flex-col gap-4">
-            <Typography variant="h6">ONWARDS & UPWARDS</Typography>
+          <img
+              src="/images/OU-Logo-Blue-Purple.png"
+              alt="logo"
+              className="w-[124.4px] object-contain h-[60px]"
+            />
             <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
               {links.map((link, index) => (
                 <ul key={index} className="">
@@ -57,6 +61,7 @@ export function Footer8() {
           </div>
         </div>
         <Typography
+        variant="h6"
           color="blue-gray"
           className="text-left !text-sm font-medium text-gray-500 lg:mt-0 mt-4"
         >
