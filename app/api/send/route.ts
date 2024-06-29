@@ -16,11 +16,11 @@ export async function POST(req: any, res: any) {
       from: 'Acme <onboarding@resend.dev>',
       to: ['joe@ou.studio'],
       subject: "Website Enquiry",
-      react: EmailTemplate({ firstName: email }) as React.ReactElement,
+      react: EmailTemplate({ email: email }) as React.ReactElement,
     });
 
     if (error) {
-      return Response.json({ error }, { status: 500 });
+      return Response.json({ error }, { status: 500 }); 
     }
 
     return Response.json({ data });
