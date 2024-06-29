@@ -1,47 +1,48 @@
-import React from "react";
+'use client'
 import {
-  Navbar,
-  Collapse,
-  Button,
-  Checkbox,
-  IconButton,
   Typography,
   Input,
+  Button,
 } from "@material-tailwind/react";
-import {
-  RectangleStackIcon,
-  UserCircleIcon,
-  CommandLineIcon,
-  Squares2X2Icon,
-} from "@heroicons/react/24/solid";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useState } from "react";
 
-interface NavItemPropsType {
-  children: React.ReactNode;
-}
 
-function NavItem({ children }: NavItemPropsType) {
-  return (
-    <li>
-      <Typography
-        as="a"
-        href="#"
-        variant="paragraph"
-        color="blue-gray"
-        className="text-blue-gray-700 flex items-center gap-2 font-medium"
-      >
-        {children}
-      </Typography>
-    </li>
-  );
-}
+
+
 
 function HeroSection10() {
+
+  const [email, setEmail] = useState('');
+  const [responseMessage, setResponseMessage] = useState('');
+  const [buttonText, setButtonText] = useState('Send Email');
+
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+
+    setButtonText('Sending...');
+
+    const response = await fetch('/api/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email }),
+    });
+
+    const result = await response.json();
+    if (response.ok) {
+      setResponseMessage('Email sent successfully!');
+      setButtonText('Send Email');
+    } else {
+      setResponseMessage(`Error: ${result.error}`);
+      setButtonText('Send Email');
+    }
+  };
 
   return (
     <>
       <header className="bg-white p-8">
-        <div className="w-w-full container mx-auto pt-12 pb-6 text-center lg:pb-20">
+        <div className="w-full container mx-auto pt-12 pb-6 text-center lg:pb-20">
           <Typography
             variant="h1"
             color="blue-gray"
@@ -55,17 +56,29 @@ function HeroSection10() {
           >
             Get started with a forward thinking website today!
           </Typography>
-          <div className="mt-8 mb-2 flex items-start w-full flex-col gap-4 md:flex-row md:justify-center">
+
+
+
+          <form onSubmit={handleSubmit} method="POST" className="mt-8 mb-2 flex items-start w-full flex-col gap-4 md:flex-row md:justify-center">
             <div className="grid lg:w-96 md:w-80 w-full">
-              <Input color="gray" label="Enter your email" size="lg" crossOrigin={undefined} />
+              <Input
+                color="gray"
+                label="Enter your email"
+                size="lg"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                crossOrigin={undefined} />
             </div>
             <Button
               color="gray"
               className="w-full py-[14px] md:w-[10rem]"
-            >
-              get started
+              type="submit"            >
+              {buttonText}
             </Button>
-          </div>
+          </form>
+            {responseMessage && <p>{responseMessage}</p>}
         </div>
         <div className="w-full lg:container lg:mx-auto">
           <img
