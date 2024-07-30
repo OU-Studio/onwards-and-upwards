@@ -26,7 +26,7 @@ function HomePage() {
         <PricingSection7></PricingSection7>
         <StatsSection3></StatsSection3>
         <FeatureSection6></FeatureSection6>
-      </main>
+      </main> 
       
     </div>
   );
