@@ -11,12 +11,6 @@ export function ContactSection15() {
     <section className="px-8 py-8 lg:py-16">
       <div className="max-w-[84rem] !mx-auto text-center">
         <Typography
-          variant="h5"
-          color="blue-gray"
-          className="mb-4 !text-base lg:!text-2xl"
-        >
-        </Typography>
-        <Typography
           variant="h1"
           color="blue-gray"
           className="mb-4 !text-3xl lg:!text-5xl"
