@@ -22,7 +22,6 @@ function Contact() {
       {/* Main Content */}
       <main>
       <DesktopNav></DesktopNav>
-        <HeroSection13></HeroSection13>
         <ContactSection15></ContactSection15>
       </main>
       

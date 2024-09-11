@@ -67,14 +67,6 @@ function PricingCard({ title, price, options }: PricingCardPropsType) {
             ))}
           </div>
         </ul>
-        <Button
-          fullWidth
-          color="gray"
-          className="flex items-center justify-center gap-4"
-        >
-          {title === "MORE INFO" ? "MORE INFO" : "MORE INFO"}{" "}
-          <ArrowRightIcon className="h-5 w-5" strokeWidth={2} />
-        </Button>
       </CardBody>
     </Card>
   );
@@ -83,34 +75,24 @@ function PricingCard({ title, price, options }: PricingCardPropsType) {
 export function PricingSection7() {
   const cards = [
     {
-      title: "ad hoc",
-      price: ["", "£60", "hour"],
+      title: "Projects completed",
+      price: ["", "950+", ""],
       options: [
-        "Website Design",
-        "Website Development",
-        "UX/UI Analysis",
-        "Mobile Scaling",
+        "Hundreds of happy clients and successful projects completed.",
       ],
     },
     {
-      title: "projects",
-      price: ["", "£900+", ""],
+      title: "Years of experience",
+      price: ["", "9+", ""],
       options: [
-        "Brand New Website",
-        "Website Refresh",
-        "E-commerce",
-        "Custom Website Functionality",
-        "Branding / Logo Design",
+        "We have a vast amount of knowledge to deliver the best work possible.",
       ],
     },
     {
-      title: "maintenance",
-      price: ["", "£50", "hour"],
+      title: "Major awards won",
+      price: ["", "3", ""],
       options: [
-        "Content Upload",
-        "Scheduled Website Audits",
-        "Priority Support",
-        "Minimum 4 hours per month",
+        "Our websites get recognised for their design and functionality.",
       ],
     },
   ];
@@ -124,14 +106,14 @@ export function PricingSection7() {
         <div className="absolute h-full w-full bg-black/80">
           <div className="container mx-auto py-16 text-center">
             <Typography variant="h2" color="white" className="mb-4">
-              See Our Pricing
+              We've been around a while...
             </Typography>
             <Typography
               variant="lead"
               color="white"
               className="mb-8 opacity-70"
             >
-              Everything comes with premium support and no hidden costs
+              and ready for a new challenge!
             </Typography>
           </div>
         </div>

@@ -73,9 +73,30 @@ const contents = [
     desc: "Studio Ore bathroom and kitchen fittings are produced in small batches. They finish and assemble each product by hand with care and attention. Components are machined from solid brass billets.",
     url: "https://studio-ore.com", // Add the URL here
   },
+  {
+    img: "/images/studioore.jpg",
+    title: "Studio Ore",
+    details: "Design • Development • E-commerce",
+    desc: "Studio Ore bathroom and kitchen fittings are produced in small batches. They finish and assemble each product by hand with care and attention. Components are machined from solid brass billets.",
+    url: "https://studio-ore.com", // Add the URL here
+  },
+  {
+    img: "/images/studioore.jpg",
+    title: "Studio Ore",
+    details: "Design • Development • E-commerce",
+    desc: "Studio Ore bathroom and kitchen fittings are produced in small batches. They finish and assemble each product by hand with care and attention. Components are machined from solid brass billets.",
+    url: "https://studio-ore.com", // Add the URL here
+  },
+  {
+    img: "/images/studioore.jpg",
+    title: "Studio Ore",
+    details: "Design • Development • E-commerce",
+    desc: "Studio Ore bathroom and kitchen fittings are produced in small batches. They finish and assemble each product by hand with care and attention. Components are machined from solid brass billets.",
+    url: "https://studio-ore.com", // Add the URL here
+  },
 ];
 
-export function ContentSection6() {
+export function ContentSection6t() {
   return (
     <section className="mx-auto container px-8 py-10 lg:py-28">
       <div className="text-center mb-28">
@@ -99,4 +120,4 @@ export function ContentSection6() {
   );
 }
 
-export default ContentSection6;
+export default ContentSection6t;

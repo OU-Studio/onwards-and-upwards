@@ -1,18 +1,15 @@
 
-'use client'
+
 
 import * as React from "react"
-import TestimonialSection14 from "../components/testimonialTwo";
-import TeamSection4 from "../components/team";
+import HeroSection10t from "../components/herot"; 
+import ContentSection6t from "../components/rentalCards2";
 import DesktopNav from '../components/desktopNav';
 
 
 
 
-
-
 function HomePage() {
-
   return (
     <div className="mainContent home">
       
@@ -21,9 +18,9 @@ function HomePage() {
       {/* Main Content */}
       <main>
       <DesktopNav></DesktopNav>
-        <TestimonialSection14></TestimonialSection14>
-        <TeamSection4></TeamSection4>
-      </main>
+        <HeroSection10t></HeroSection10t>
+        <ContentSection6t></ContentSection6t>
+      </main> 
       
     </div>
   );

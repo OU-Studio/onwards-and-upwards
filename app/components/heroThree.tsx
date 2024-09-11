@@ -61,12 +61,6 @@ export function HeroSection1() {
             </Typography>
             <div className="grid">
               <div className="mb-2 flex items-start w-full flex-col md:w-9/12 gap-4 md:flex-row">
-                <Button
-                  color="gray"
-                  className="w-full py-[14px] md:w-[10rem]"
-                >
-                  LEARN MORE
-                </Button>
               </div>
             </div>
           </div>

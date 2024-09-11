@@ -48,7 +48,7 @@ function HeroSection10() {
             color="blue-gray"
             className="!lg:leading-tight mx-auto mb-6 w-full text-3xl !leading-snug lg:max-w-3xl lg:text-5xl"
           >
-            A creative studio with innovative solutions to tackle the modern web
+            Some of our favourite projects
           </Typography>
           <Typography
             variant="lead"

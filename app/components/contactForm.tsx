@@ -15,7 +15,6 @@ export function ContactSection15() {
           color="blue-gray"
           className="mb-4 !text-base lg:!text-2xl"
         >
-          Request Our Services
         </Typography>
         <Typography
           variant="h1"
@@ -25,9 +24,7 @@ export function ContactSection15() {
           Explore Our Diverse Services
         </Typography>
         <Typography className="mb-10 font-normal !text-lg lg:mb-20 mx-auto max-w-2xl !text-gray-500">
-          From creative design and marketing to technical support and
-          consultancy, we cover a broad spectrum to ensure your requirements are
-          fully met.
+          You should hear back from us in 1 - 2 business days
         </Typography>
         <div className="grid grid-cols-1 gap-x-12 gap-y-6 xl:grid-cols-2 items-start place-items-center">
           <form action="#" className="flex flex-col gap-4">
@@ -39,53 +36,39 @@ export function ContactSection15() {
             </Typography>
             <div className="flex flex-wrap gap-4">
               <Button
-                variant={activeService === "web" ? "outlined" : "text"}
+                variant={activeService === "design" ? "outlined" : "text"}
+                className={`max-w-fit ${activeService === "web" ? "" : "border text-gray-800 border-gray-300"}`}
+                onClick={() => setActiveService("web")}
+              >
+                Web Design
+              </Button>
+              <Button
+                variant={activeService === "dev" ? "outlined" : "text"}
                 className={`max-w-fit ${activeService === "web" ? "" : "border text-gray-800 border-gray-300"}`}
                 onClick={() => setActiveService("web")}
               >
                 Web Development
               </Button>
               <Button
-                variant={activeService === "marketing" ? "outlined" : "text"}
-                className={`max-w-fit ${activeService === "marketing" ? "" : "border text-gray-800 border-gray-300"}`}
-                onClick={() => setActiveService("marketing")}
+                variant={activeService === "uiux" ? "outlined" : "text"}
+                className={`max-w-fit ${activeService === "web" ? "" : "border text-gray-800 border-gray-300"}`}
+                onClick={() => setActiveService("web")}
               >
-                Digital Marketing
+                UI / UX Analysis
               </Button>
               <Button
-                variant={activeService === "copywriting" ? "outlined" : "text"}
-                className={`max-w-fit ${activeService === "copywriting" ? "" : "border text-gray-800 border-gray-300"}`}
-                onClick={() => setActiveService("copywriting")}
+                variant={activeService === "other" ? "outlined" : "text"}
+                className={`max-w-fit ${activeService === "web" ? "" : "border text-gray-800 border-gray-300"}`}
+                onClick={() => setActiveService("web")}
               >
-                Copywriting
-              </Button>
-              <Button
-                variant={activeService === "analysis" ? "outlined" : "text"}
-                className={`max-w-fit ${activeService === "analysis" ? "" : "border text-gray-800 border-gray-300"}`}
-                onClick={() => setActiveService("analysis")}
-              >
-                Data Analysis
-              </Button>
-              <Button
-                variant={activeService === "consultancy" ? "outlined" : "text"}
-                className={`max-w-fit ${activeService === "consultancy" ? "" : "border text-gray-800 border-gray-300"}`}
-                onClick={() => setActiveService("consultancy")}
-              >
-                Business Consultancy
-              </Button>
-              <Button
-                variant={activeService === "social" ? "outlined" : "text"}
-                className={`max-w-fit ${activeService === "social" ? "" : "border text-gray-800 border-gray-300"}`}
-                onClick={() => setActiveService("social")}
-              >
-                Social Media
+                Other
               </Button>
             </div>
             <Typography
               variant="small"
               className="text-left !font-semibold !text-gray-600"
             >
-              Estimated Expenses
+              Budget Size
             </Typography>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -93,21 +76,21 @@ export function ContactSection15() {
                 className={`max-w-fit ${activePrice === "1000" ? "" : "border text-gray-800 border-gray-300"}`}
                 onClick={() => setActivePrice("1000")}
               >
-                less than $1,000
+                less than £1,000
               </Button>
               <Button
                 variant="outlined"
                 className={`max-w-fit ${activePrice === "5000" ? "" : "border text-gray-800 border-gray-300"}`}
                 onClick={() => setActivePrice("5000")}
               >
-                $1,000 - $5,000
+                £1,000 - £5,000
               </Button>
               <Button
                 variant="outlined"
                 className={`max-w-fit ${activePrice === "+5000" ? "" : "border text-gray-800 border-gray-300"}`}
                 onClick={() => setActivePrice("+5000")}
               >
-                More than $5,000
+                More than £5,000
               </Button>
             </div>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">

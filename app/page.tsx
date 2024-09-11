@@ -5,7 +5,6 @@ import * as React from "react"
 import HeroSection10 from "./components/hero";
 import ContentSection6 from "./components/rentalCards";
 import PricingSection7 from "./components/pricing";
-import StatsSection3 from "./components/stats";
 import FeatureSection6 from "./components/featuredSix";
 import DesktopNav from './components/desktopNav';
 
@@ -24,7 +23,6 @@ function HomePage() {
         <HeroSection10></HeroSection10>
         <ContentSection6></ContentSection6>
         <PricingSection7></PricingSection7>
-        <StatsSection3></StatsSection3>
         <FeatureSection6></FeatureSection6>
       </main> 
       

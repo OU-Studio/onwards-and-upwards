@@ -57,47 +57,7 @@ function DesktopNav() {
         </div>
         <ul className="hidden items-center gap-6 lg:flex rounded-md">
           <NavItem href="/about">About</NavItem>
-          <li className="relative group">
-            <Typography
-              as="a"
-              href="#"
-              variant="paragraph"
-              color="blue-gray"
-              className="text-blue-gray-700 flex items-center gap-2 font-medium"
-            >
-              Services
-            </Typography>
-            <ul className="absolute left-0 pt-2 hidden w-56 bg-white shadow-lg group-hover:block rounded-md">
-              <MenuItem>
-                <NavItem href="/website-design">Website Design</NavItem>
-              </MenuItem>
-              <MenuItem>
-                <NavItem href="/website-development">Website Development</NavItem>
-              </MenuItem>
-              <MenuItem>
-                <NavItem href="/seo">SEO</NavItem>
-              </MenuItem>
-              <MenuItem>
-                <NavItem href="/digital-marketing">Digital Marketing</NavItem>
-              </MenuItem>
-              <MenuItem>
-                <NavItem href="/ux-ui-analysis">UX/UI Analysis</NavItem>
-              </MenuItem>
-              <MenuItem>
-                <NavItem href="/mobile-scaling">Mobile Scaling</NavItem>
-              </MenuItem>
-              <MenuItem>
-                <NavItem href="/e-commerce">E-Commerce</NavItem>
-              </MenuItem>
-              <MenuItem>
-                <NavItem href="/branding-logo-design">Branding / Logo Design</NavItem>
-              </MenuItem>
-              <MenuItem>
-                <NavItem href="/website-maintenance">Website Maintenance</NavItem>
-              </MenuItem>
-            </ul>
-          </li>
-
+<NavItem href="/services">Services</NavItem>
           <NavItem href="/portfolio">Portfolio</NavItem>
           <NavItem href="/contact">Contact</NavItem>
         </ul>

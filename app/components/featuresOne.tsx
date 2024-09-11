@@ -17,10 +17,10 @@ export function FeatureSection16() {
               color="blue-gray"
               className="mb-2 font-medium"
             >
-              UX Focused
+              UX / UI Analysis
             </Typography>
             <Typography className="text-center mb-0 max-w-s mx-auto text-base font-normal leading-7 !text-gray-500 p-4 pt-0 pb-0">
-              Our website designs focus on a great user experience. We ensure our designs are visually appealing and easy to navigate, keeping visitors engaged and helping them find what they need.
+              We ensure your website is visually appealing and easy to navigate, keeping visitors engaged for longer.
             </Typography>
             <img
               src="/images/uxui.jpeg"
@@ -39,10 +39,10 @@ export function FeatureSection16() {
               color="blue-gray"
               className="mb-2 font-medium"
             >
-              Responsive Design
+              Responsive Designs
             </Typography>
             <Typography className="text-center mb-0 max-w-s mx-auto text-base font-normal leading-7 !text-gray-500 p-4 pt-0 pb-0">
-              With the vast array of devices today, from smartphones to large desktop monitors, we prioritize a responsive design to ensure that your website performs seamlessly across all screen sizes. This approach maintains consistency, enhances user engagement, and preserves functionality and aesthetics on every platform for every user.
+              With the vast array of devices today, we focus on responsive designs to ensure that your website performs seamlessly across all screen sizes. 
             </Typography>
             <img
               src="/images/responsivedesign.jpeg"
@@ -63,10 +63,10 @@ export function FeatureSection16() {
               color="blue-gray"
               className="mb-2 font-medium"
             >
-              Custom Design Solutions
+              Custom Development Solutions
             </Typography>
             <Typography className="text-center mb-0 max-w-s mx-auto text-base font-normal leading-7 !text-gray-500 p-4 pt-0 pb-0">
-              Our Custom Design Solutions are tailored to reflect your unique brand identity and meet your specific business needs. We take the time to understand your vision and objectives, ensuring that every element of the design is crafted to enhance your online presence. By focusing on bespoke visuals and practical features, we deliver a distinct and compelling website that stands out in your industry.
+              Our development solutions are tailored to your specific needs, offering you functionality and features to enhance your online presence.
             </Typography>
             <img
               src="/images/websitedesign.jpeg"

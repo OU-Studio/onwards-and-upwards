@@ -19,17 +19,12 @@ export function TestimonialSection14() {
                 Joe Cory
               </Typography>
               <div className="mt-8 flex items-center gap-4">
-                <Avatar
-                  variant="rounded"
-                  src={`https://www.material-tailwind.com/image/avatar5.jpg`}
-                  alt="spotify"
-                />
                 <div></div>
               </div>
             </div>
             <div className="h-36 w-36 md:h-[16rem] md:w-[16rem] lg:ml-auto lg:h-[22rem] lg:w-[20rem]">
               <img
-                src={`https://www.material-tailwind.com/img/avatar1.jpg`}
+                src={`https://www.material-tailwind.com/img/avatar111.jpg`}
                 alt="testimonial image"
                 className="h-full w-full rounded-lg object-cover"
               />
