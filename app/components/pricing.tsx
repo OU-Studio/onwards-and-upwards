@@ -106,7 +106,7 @@ export function PricingSection7() {
         <div className="absolute h-full w-full bg-black/80">
           <div className="container mx-auto py-16 text-center">
             <Typography variant="h2" color="white" className="mb-4">
-              We've been around a while...
+              We&apos;ve been around a while...
             </Typography>
             <Typography
               variant="lead"
