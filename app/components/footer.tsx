@@ -72,7 +72,7 @@ export function Footer8() {
           color="blue-gray"
           className="text-left !text-sm font-medium text-gray-500 lg:mt-0 mt-4"
         >
-          <a href="/public/pdf/Terms and conditions.pdf" target="_blank">Terms and Conditions</a> - <a href="/pdf/Privacy policy.pdf" target="_blank">Privacy Policy</a> - <a href="/pdf/Cookie policy.pdf" target="_blank">Cookie Policy</a> - <a href="/pdf/Website terms of use.pdf" target="_blank">Terms of Use</a>
+          <a href="/pdf/Terms and conditions.pdf" target="_blank">Terms and Conditions</a> - <a href="/pdf/Privacy policy.pdf" target="_blank">Privacy Policy</a> - <a href="/pdf/Cookie policy.pdf" target="_blank">Cookie Policy</a> - <a href="/pdf/Website terms of use.pdf" target="_blank">Terms of Use</a>
         </Typography>
       </div>
     </footer>
