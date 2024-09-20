@@ -78,13 +78,6 @@ function HeroSection16() {
                 </Button>
               </div>
             </div>
-            <div className="w-full lg:container lg:mx-auto mt-8">
-              <img
-                src="https://www.material-tailwind.com/image/image-3.jpeg"
-                alt="credit cards"
-                className="h-96 w-full rounded-lg object-cover lg:h-[35rem]"
-              />
-            </div>
           </div>
         </div>
       </header>

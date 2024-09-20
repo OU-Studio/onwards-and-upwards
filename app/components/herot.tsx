@@ -73,19 +73,12 @@ function HeroSection10() {
             </div>
             <Button
               color="gray"
-              className="w-full py-[14px] md:w-[10rem]"
+              className="w-full py-[14px] md:w-[10rem]  bg-brandOrange"
               type="submit"            >
               {buttonText}
             </Button>
           </form>
             {responseMessage && <p>{responseMessage}</p>}
-        </div>
-        <div className="w-full lg:container lg:mx-auto">
-          <img
-            src="https://www.material-tailwind.com/image/image-3.jpeg"
-            alt="credit cards"
-            className="h-96 w-full rounded-lg object-cover lg:h-[21rem]"
-          />
         </div>
       </header>
     </>

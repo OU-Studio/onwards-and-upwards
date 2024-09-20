@@ -89,15 +89,8 @@ export function FeatureSection16() {
             </Typography>
 
             <div className="relative bg-clip-border text-gray-700 col-span-2  overflow-hidden rounded-lg mt-8">
-              <Typography
-                variant="h4"
-                color="black"
-                className="mb-2 font-medium"
-              >
-                Projects starting from £800
-              </Typography>
               <Typography className="text-center max-w-xs mx-auto text-base font-normal leading-7 !text-black">
-                If your interested in getting fresh website design, get in contact using the button below.
+                If your interested in any of our services, get in contact using the button below.
               </Typography>
               <Button
                 color="black"

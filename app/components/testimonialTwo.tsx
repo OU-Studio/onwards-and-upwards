@@ -24,7 +24,7 @@ export function TestimonialSection14() {
             </div>
             <div className="h-36 w-36 md:h-[16rem] md:w-[16rem] lg:ml-auto lg:h-[22rem] lg:w-[20rem]">
               <img
-                src={`https://www.material-tailwind.com/img/avatar111.jpg`}
+                src={`/images/me.jpg`}
                 alt="testimonial image"
                 className="h-full w-full rounded-lg object-cover"
               />

@@ -29,7 +29,7 @@ import {
           <img
             src={img}
             alt={name}
-            className="h-full w-full object-cover object-top"
+            className="h-full w-full object-fit-contain object-center"
           />
         </CardHeader>
         <CardBody className="p-0 lg:col-span-7">
@@ -63,13 +63,13 @@ import {
   
   const members = [
     {
-      img: "",
+      img: "/images/mmwlogo.png",
       name: "Manage My Website",
       title: "SEO Partner",
       desc: "When it comes to search engine optimization (or SEO), they really know their stuff. Their specialist Squarespace SEO service will ensure that my website can be picked up and read easily by the search engines. While they can't guarantee a specific position in the rankings, I can be confident that my site will be recognized.",
     },
     {
-      img: "",
+      img: "/images/edslogo.png",
       name: "Electric Design Studio",
       title: "Design Partner",
       desc: "",
@@ -79,7 +79,7 @@ import {
   export function TeamSection4() {
     return (
       <section className="py-10 px-8 lg:py-28">
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-screen-lg">
           <div className="mb-20 text-center lg:mb-28">
             <Typography variant="h2" color="blue-gray" className="mb-4">
               Our Trusted Partners
@@ -91,7 +91,7 @@ import {
               I work with some great companies to help offer my clients all the services they require.
             </Typography>
           </div>
-          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-2">
+          <div className="grid gap-24 md:grid-cols-1 lg:grid-cols-1">
             {members.map((props, key) => (
               <TeamCard key={key} {...props} />
             ))}

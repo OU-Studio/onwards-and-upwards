@@ -41,7 +41,7 @@ function HeroSection10() {
 
   return (
     <>
-      <header className="bg-white p-8">
+      <header className="bg-white">
         <div className="w-full container mx-auto pt-12 pb-6 text-center lg:pb-20">
           <Typography
             variant="h1"
@@ -73,14 +73,14 @@ function HeroSection10() {
             </div>
             <Button
               color="gray"
-              className="w-full py-[14px] md:w-[10rem]"
+              className="w-full py-[14px] md:w-[10rem] bg-brandOrange"
               type="submit"            >
               {buttonText}
             </Button>
           </form>
             {responseMessage && <p>{responseMessage}</p>}
         </div>
-        <div className="w-full lg:container lg:mx-auto">
+        <div className="w-full lg:container lg:mx-auto homeBanner">
           <img
             src="https://www.material-tailwind.com/image/image-3.jpeg"
             alt="credit cards"

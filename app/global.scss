@@ -63,3 +63,22 @@ ul li svg{
     margin-top: -8rem !important;
 }
 }
+
+.homeBanner{
+max-width: 1200px;
+transition: all 1s ease;
+img{
+    transition: all 1s ease;
+}
+}
+
+[data-scroll="true"] .homeBanner{
+    max-width: 1800px; 
+    img{
+        border-radius: 0px;
+    }
+}
+
+.object-fit-contain{
+    object-fit: contain;
+}
