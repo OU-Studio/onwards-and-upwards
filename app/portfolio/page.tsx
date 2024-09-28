@@ -18,7 +18,6 @@ function HomePage() {
       {/* Main Content */}
       <main>
       <DesktopNav></DesktopNav>
-        <HeroSection10t></HeroSection10t>
         <ContentSection6t></ContentSection6t>
       </main> 
       

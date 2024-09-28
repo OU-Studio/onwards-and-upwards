@@ -17,10 +17,10 @@ export function FeatureSection16() {
               color="blue-gray"
               className="mb-2 font-medium"
             >
-              UX / UI Analysis
+              Generate more sales
             </Typography>
             <Typography className="text-center mb-0 max-w-s mx-auto text-base font-normal leading-7 !text-gray-500 p-4 pt-0 pb-0">
-              We ensure your website is visually appealing and easy to navigate, keeping visitors engaged for longer.
+              We all want more sales and a new website can drive more conversions.
             </Typography>
             <img
               src="/images/uxui.jpeg"
@@ -39,10 +39,10 @@ export function FeatureSection16() {
               color="blue-gray"
               className="mb-2 font-medium"
             >
-              Responsive Designs
+              Find new customers 
             </Typography>
             <Typography className="text-center mb-0 max-w-s mx-auto text-base font-normal leading-7 !text-gray-500 p-4 pt-0 pb-0">
-              With the vast array of devices today, we focus on responsive designs to ensure that your website performs seamlessly across all screen sizes. 
+              A well crafted website will attract new customers and get you into new markets.
             </Typography>
             <img
               src="/images/responsivedesign.jpeg"
@@ -63,10 +63,10 @@ export function FeatureSection16() {
               color="blue-gray"
               className="mb-2 font-medium"
             >
-              Custom Development Solutions
+              Competitive advantage
             </Typography>
             <Typography className="text-center mb-0 max-w-s mx-auto text-base font-normal leading-7 !text-gray-500 p-4 pt-0 pb-0">
-              Our development solutions are tailored to your specific needs, offering you functionality and features to enhance your online presence.
+              With so many new businesses starting up every day, make sure you are ahead of the competition.
             </Typography>
             <img
               src="/images/websitedesign.jpeg"
@@ -90,7 +90,7 @@ export function FeatureSection16() {
 
             <div className="relative bg-clip-border text-gray-700 col-span-2  overflow-hidden rounded-lg mt-8">
               <Typography className="text-center max-w-xs mx-auto text-base font-normal leading-7 !text-black">
-                If your interested in any of our services, get in contact using the button below.
+                Websites start from just £300!<br></br>If your interested in a new website, get in contact using the button below.
               </Typography>
               <Button
                 color="black"

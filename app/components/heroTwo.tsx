@@ -52,7 +52,7 @@ function HeroSection16() {
               color="blue-gray"
               className="mx-auto my-6 w-full leading-snug  !text-2xl lg:max-w-3xl lg:!text-5xl"
             >
-              Elevate you online presence with a{" "}
+              Elevate your online presence with a{" "}
               <span className="text-brandLightBlue leading-snug ">
                 new
               </span>{" "}
@@ -60,13 +60,7 @@ function HeroSection16() {
               <span className="leading-snug text-brandPurple">
                 unique
               </span>
-              {" "}website design.
-            </Typography>
-            <Typography
-              variant="lead"
-              className="mx-auto w-full !text-gray-500 lg:text-lg text-base"
-            >
-              Why settle for an &apos;okay&apos; looking website when you can have a great one.
+              {" "}website.
             </Typography>
             <div className="mt-8 grid w-full place-items-start md:justify-center">
               <div className="mb-2 flex w-full flex-col gap-4 md:flex-row">

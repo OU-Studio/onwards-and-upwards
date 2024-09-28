@@ -50,35 +50,8 @@ function HeroSection10() {
           >
             Some of our favourite projects
           </Typography>
-          <Typography
-            variant="lead"
-            className="mx-auto w-full !text-gray-500 lg:w-10/12 lg:px-12 xl:w-9/12 xl:px-20"
-          >
-            Get started with a forward thinking website today!
-          </Typography>
 
 
-
-          <form onSubmit={handleSubmit} method="POST" className="mt-8 mb-2 flex items-start w-full flex-col gap-4 md:flex-row md:justify-center">
-            <div className="grid lg:w-96 md:w-80 w-full">
-              <Input
-                color="gray"
-                label="Enter your email"
-                size="lg"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                crossOrigin={undefined} />
-            </div>
-            <Button
-              color="gray"
-              className="w-full py-[14px] md:w-[10rem]  bg-brandOrange"
-              type="submit"            >
-              {buttonText}
-            </Button>
-          </form>
-            {responseMessage && <p>{responseMessage}</p>}
         </div>
       </header>
     </>

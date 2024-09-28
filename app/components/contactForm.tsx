@@ -15,78 +15,13 @@ export function ContactSection15() {
           color="blue-gray"
           className="mb-4 !text-3xl lg:!text-5xl"
         >
-          Explore Our Diverse Services
+          How can we help your business today?
         </Typography>
         <Typography className="mb-10 font-normal !text-lg lg:mb-20 mx-auto max-w-2xl !text-gray-500">
-          You should hear back from us in 1 - 2 business days
+          You will hear back from us within 24 hours
         </Typography>
         <div className="grid grid-cols-1 gap-x-12 gap-y-6 xl:grid-cols-2 items-start place-items-center">
           <form action="#" className="flex flex-col gap-4">
-            <Typography
-              variant="small"
-              className="text-left !font-semibold !text-gray-600"
-            >
-              Select Service
-            </Typography>
-            <div className="flex flex-wrap gap-4">
-              <Button
-                variant={activeService === "design" ? "outlined" : "text"}
-                className={`max-w-fit ${activeService === "web" ? "" : "border text-gray-800 border-gray-300"}`}
-                onClick={() => setActiveService("web")}
-              >
-                Web Design
-              </Button>
-              <Button
-                variant={activeService === "dev" ? "outlined" : "text"}
-                className={`max-w-fit ${activeService === "web" ? "" : "border text-gray-800 border-gray-300"}`}
-                onClick={() => setActiveService("web")}
-              >
-                Web Development
-              </Button>
-              <Button
-                variant={activeService === "uiux" ? "outlined" : "text"}
-                className={`max-w-fit ${activeService === "web" ? "" : "border text-gray-800 border-gray-300"}`}
-                onClick={() => setActiveService("web")}
-              >
-                UI / UX Analysis
-              </Button>
-              <Button
-                variant={activeService === "other" ? "outlined" : "text"}
-                className={`max-w-fit ${activeService === "web" ? "" : "border text-gray-800 border-gray-300"}`}
-                onClick={() => setActiveService("web")}
-              >
-                Other
-              </Button>
-            </div>
-            <Typography
-              variant="small"
-              className="text-left !font-semibold !text-gray-600"
-            >
-              Budget Size
-            </Typography>
-            <div className="flex flex-wrap gap-4">
-              <Button
-                variant="outlined"
-                className={`max-w-fit ${activePrice === "1000" ? "" : "border text-gray-800 border-gray-300"}`}
-                onClick={() => setActivePrice("1000")}
-              >
-                less than £1,000
-              </Button>
-              <Button
-                variant="outlined"
-                className={`max-w-fit ${activePrice === "5000" ? "" : "border text-gray-800 border-gray-300"}`}
-                onClick={() => setActivePrice("5000")}
-              >
-                £1,000 - £5,000
-              </Button>
-              <Button
-                variant="outlined"
-                className={`max-w-fit ${activePrice === "+5000" ? "" : "border text-gray-800 border-gray-300"}`}
-                onClick={() => setActivePrice("+5000")}
-              >
-                More than £5,000
-              </Button>
-            </div>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
               <div className="grid grid-cols-2 w-full gap-4">
                 <div>
@@ -173,7 +108,7 @@ export function ContactSection15() {
               />
             </div>
             <Button className="w-full lg:max-w-fit" color="gray">
-              Send request
+              Send message
             </Button>
           </form>
           <img
