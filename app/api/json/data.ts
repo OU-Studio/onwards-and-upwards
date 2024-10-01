@@ -1,6 +1,11 @@
+'use server'
+
 import { NextResponse } from 'next/server';
 
 export async function GET(req: Request) {
+    const headers = new Headers();
+    headers.append('Access-Control-Allow-Origin', '*'); // Allow all origins
+    
   const { searchParams } = new URL(req.url);
   const code = searchParams.get('code');
 
