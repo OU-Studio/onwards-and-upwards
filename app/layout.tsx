@@ -5,6 +5,7 @@ import './global.css'
 import { headers } from 'next/headers';
 import Footer8 from './components/footer';
 import { useEffect, useRef } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ['latin'] })
 
