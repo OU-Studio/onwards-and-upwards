@@ -60,13 +60,6 @@ const contents = [
     url: "/project/67"
   },
   {
-    img: "/images/portfolio-68.jpg",
-    title: "Client Name",
-    details: "Design • Development",
-    desc: "Description will go here",
-    url: "/project/68"
-  },
-  {
     img: "/images/portfolio-26.jpg",
     title: "Client Name",
     details: "Design • Development",
@@ -375,13 +368,6 @@ const contents = [
     url: "/project/59"
   },
   {
-    img: "/images/portfolio-70.jpg",
-    title: "Client Name",
-    details: "Design • Development",
-    desc: "Description will go here",
-    url: "/project/70"
-  },
-  {
     img: "/images/portfolio-25.jpg",
     title: "Client Name",
     details: "Design • Development",
@@ -408,13 +394,6 @@ const contents = [
     details: "Design • Development",
     desc: "Description will go here",
     url: "/project/1"
-  },
-  {
-    img: "/images/portfolio-69.jpg",
-    title: "Client Name",
-    details: "Design • Development",
-    desc: "Description will go here",
-    url: "/project/69"
   },
   {
     img: "/images/portfolio-64.jpg",
