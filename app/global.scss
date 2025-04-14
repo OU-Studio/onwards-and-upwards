@@ -85,7 +85,13 @@ img{
 
 .pImgHeight{
     height: 0px !important;
-    padding-bottom: 60.7638888889%;
+    position: relative;
+    &:before{
+        content: '';
+        display: block;
+        width: 100%;
+        padding-bottom: 60.7638888889%;
+    }
     img{
         position: absolute;
         top: 0;
