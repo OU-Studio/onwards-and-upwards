@@ -86,7 +86,7 @@ img{
 .pImgHeight{
     height: auto !important;
     position: relative;
-    border-radius: 0px;
+    border-radius: 0px !important;
     &:before{
         content: '';
         display: block;
@@ -99,5 +99,6 @@ img{
         left: 0;
         width: calc(100% + 4px);
         height: 100%;
+        max-width: none !important;
     }
 }
