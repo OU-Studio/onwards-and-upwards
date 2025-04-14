@@ -19,7 +19,7 @@ interface ContentCardPropsType {
 function ContentCard({ img, title, desc, details, url }: ContentCardPropsType) {
   return (
     <Card shadow={true}>
-      <CardHeader color="blue-gray" className="relative h-52">
+      <CardHeader color="blue-gray" className="relative h-52 pImgHeight">
         <img src={img} alt="card-image" />
       </CardHeader>
       <CardBody>
