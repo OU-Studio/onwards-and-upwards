@@ -216,7 +216,7 @@ const contents = [
   },
   {
     img: "/images/portfolio-28.jpg",
-    title: "RHODE'S MOTOR LODGE",
+    title: "RHODE&apos;S MOTOR LODGE",
     details: "DEVELOPMENT • MAINTENANCE",
     url: "https://www.rhodesmotorlodge.com/"
   },
@@ -432,7 +432,7 @@ const contents = [
   },
   {
     img: "/images/portfolio-67.jpg",
-    title: "Murphy's Naturals",
+    title: "Murphy&apos;s Naturals",
     details: "DEVELOPMENT • MAINTENANCE",
     url: "https://www.murphysnaturals.com/"
   }
