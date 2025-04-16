@@ -11,7 +11,6 @@ import {
 interface ContentCardPropsType {
   img: string;
   title: string;
-  desc: string;
   details: string;
   url: string; // Add the url property here
 }
@@ -37,9 +36,6 @@ function ContentCard({ img, title, desc, details, url }: ContentCardPropsType) {
           className="mb-3 normal-case transition-colors hover:text-gray-700"
         >
           {title}
-        </Typography>
-        <Typography className="mb-5 !text-base !font-normal !text-gray-500">
-          {desc}
         </Typography>
         <a href={url} target="_blank" rel="noopener noreferrer">
           <Button color="gray" variant="outlined">
