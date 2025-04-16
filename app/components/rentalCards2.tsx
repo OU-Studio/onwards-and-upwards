@@ -438,13 +438,12 @@ export function ContentSection6t() {
   return (
     <section className="mx-auto container px-8 py-10 lg:py-28">
       <div className="grid grid-cols-1 gap-y-16 gap-x-10 md:grid-cols-2 lg:grid-cols-3">
-        {contents.map(({ img, title, desc, details, url }) => (
+        {contents.map(({ img, title, details, url }) => (
           <ContentCard
             details={details}
             key={title}
             img={img}
             title={title}
-            desc={desc}
             url={url}
           />
         ))}
