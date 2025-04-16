@@ -15,7 +15,7 @@ interface ContentCardPropsType {
   url: string; // Add the url property here
 }
 
-function ContentCard({ img, title, desc, details, url }: ContentCardPropsType) {
+function ContentCard({ img, title, details, url }: ContentCardPropsType) {
   return (
     <Card shadow={true}>
       <CardHeader color="blue-gray" className="relative h-52 pImgHeight">
