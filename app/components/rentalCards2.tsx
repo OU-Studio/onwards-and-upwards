@@ -122,7 +122,7 @@ const contents = [
     img: "/images/portfolio-12.jpg",
     title: "Luke Hope",
     details: "CONSULTANCY • DEVELOPMENT • MAINTENANCE",
-    url: "https://lukehope.co/
+    url: "https://lukehope.co/"
   },
   {
     img: "/images/portfolio-13.jpg",
